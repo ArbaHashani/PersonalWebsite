@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>My Basketball Journey: Achievements & Experiences</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../Part 1/index.html">Home</a></li>
+                <li><a href="../Part 2/About.html">About</a></li>
+                <li><a href="../Part 3/Projects.html">Projects</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>    
+    
+    <div class="LoginRegister">
+        <div class="Register">
+            <form onsubmit="return validateRegistrationForm()">
+                <h2>Contact</h2>
+                <p>Name: <input id="name" type="text" required></p>
+                <p>Surname: <input id="surname" type="text" required></p>
+                <p>Email: <input id="regEmail" type="email" required></p>
+                <p>Message: <input id="regPassword" type="text" required></p>
+                <button type="submit">Message Me</button>
+            </form>
+        </div>
+    </div>
+    
+        <footer>
+            <footer class="footer">
+                <div class="container">
+                    <div class="section categories">
+                        <h2>Categories</h2>
+                        <div class="kategorite">
+                            <p>Home</p>
+                            <p>About</p>
+                            <p>Projects</p>
+                            <p>Contact</p>
+                        </div>
+                    </div>
+        
+            
+                    <div class="section1 social-icons">
+                        <h2>Follow Me</h2>
+                        <div class="icon">
+                            <a href="https://www.instagram.com/"><img src="../indexphoto/instagram-icon.png" alt="Instagram"></a>
+                            <a href="https://www.facebook.com/login/"><img src="../indexphoto/facebook-icon.png" alt="Facebook"></a>
+                        </div>
+                    </div>
+            
+                    <div class="section newsletter">
+                        <h2>Email Me</h2>
+                        <div class="email">
+                            </button>arbahashani10.7@gmail.com
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>  
+        
+        
+        <script>
+            function checkEmail() {
+                let domain = document.getElementById("emailInput").value.split('@')[1];
+        
+                if (domain !== "@gmail.com") {
+                    alert("Please use the correct email domain!");
+                } else {
+                    alert("You have successfully subscribed!");
+                }
+            }
+            function validateRegistrationForm() {
+
+                alert("Message sent!");
+                return true;
+            }
+
+        </script>
+</body>
+</html>
